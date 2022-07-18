@@ -29,20 +29,7 @@ p {
     margin-right: auto;
     width: 50%;
 }
-/*cytat*/
-.bg-3 {
-    /*display:flex;*/
-    padding: 1em;
-}
-.bg-3 .color-box {
 
-    background-color: #E9963A;
-}
-
-.bg-3 p {
-    font-size: 0.6em;
-    color: black;
-}
 
 .container-fluid {
     /*max-width:1024px;*/
@@ -55,10 +42,7 @@ p {
 .container-fluid div {
         color: black;
 }
-.bg-4 {
-    width: 100%;
-    background-color:#FFF6FB;
-}
+
 
 /*nawigacja*/
 .navbar {
@@ -89,7 +73,9 @@ p {
 }
 /*first container*/
 
-
+.bg-1{
+    max-width:1024px;
+}
 
 .question_text {
     padding: 0.5em;
@@ -103,7 +89,7 @@ p {
     display:flex;
 }
 .answer_text {
-    background-image: url('images\IMG-0084.jpg'); 
+    /*background-image: url('../images/IMG-0084.jpg');*/ 
     /*padding-right: 2em;*/
     font-size: 1.75em;
     font-weight: 100;
@@ -111,28 +97,86 @@ p {
     list-style: none;
     color: black;
 }
-/*.bg-1-photo::before {
-    content: ' ';
+
+
+/*.bg-1::before {
+    content: '';
     background-color: #FAD23A;
-    display: block;
     width: 10em;
     height: 10em;
-    right: -10px;
-    top: -30px;
+    display: block;
+    position: absolute;
+    right: 34em;
+    top: 55em;
 }*/
 .bg-1-photo {
     width: 30em;
     height: auto;
-    /*position: relative;
-    z-index: 2;*/
+    position: relative;
+    z-index: 2;
 }
-
 /*second container*/
+.bg-2 {
+    max-width: 1024px;
+    background-color: #FFFFAB;
+    margin-top: 5em;
+    margin-bottom:5em;
+}
 .cooking_text{
     font-size: 1em;
     color:black;
 }
+/*galeria*/
+.gallery{
+    max-width:1024px;
+    
+}
+/*cytat*/
+.bg-3 {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    max-width: 1024px;
+    background-color: #FAD23A;
+}
 
+
+    .bg-3 p {
+        font-size: 0.6em;
+        color: black;
+    }
+/*footer*/
+.bg-4 {
+    width: 100%;
+    background-color: #FFF6FB;
+}
+footer {
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer .logo-image {
+    content:'';
+    background-image: url('../images/unnamed.png');
+    width: 1.5em;
+    height: 1.5em;
+}
+.footer .left-side {
+    display: inline-block;
+}
+.footer .left-side p {
+    font-size: 1.5em;
+}
+.footer__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icons {
+    width: 1.5em;
+    height: 1.5em;
+}
 /*O mnie*/
 .info__single {
     display: flex;
