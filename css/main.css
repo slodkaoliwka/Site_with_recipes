@@ -66,10 +66,10 @@ p {
 }
 /*baner*/
 .logo {
-    height: 5em;
+    /*height: 5em;
     width: 5em;
     background-image: url("images\unnamed.png");
-    background-position: center;
+    background-position: center;*/
 }
 /*first container*/
 
@@ -147,7 +147,7 @@ p {
 /*footer*/
 .bg-4 {
     width: 100%;
-    background-color: #FFF6FB;
+    /*background-color: #FFF6FB;*/
 }
 footer {
     box-shadow: 0 -5px 40px #00000029;
@@ -155,27 +155,26 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
-footer .footer .logo-image {
-    content:'';
-    background-image: url('../images/unnamed.png');
-    width: 1.5em;
-    height: 1.5em;
-}
-.footer .left-side {
-    display: inline-block;
+
+.footer .left-side{
+    display: flex;
+   
+
 }
 .footer .left-side p {
     font-size: 1.5em;
 }
-.footer__icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+.footer .left-side .logo {
+        height: 35px;
+        width: 35px;
+    }
+
 .icons {
-    width: 1.5em;
-    height: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
 }
 /*O mnie*/
 .info__single {
