@@ -65,11 +65,22 @@ p {
     background-color: #FAD23A;
 }
 /*baner*/
-.logo {
-    /*height: 5em;
-    width: 5em;
-    background-image: url("images\unnamed.png");
-    background-position: center;*/
+.baner .baner_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background: url('../images/baner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.baner .logo {
+    width: 15em;
+    height: 15em;
 }
 /*first container*/
 
