@@ -1,0 +1,39 @@
+﻿/*nawigacja*/
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #FFF6FB;
+}
+
+.navbar-nav li:hover {
+    color: black;
+    background-color: #FAD23A;
+}
+
+.dropdown-menu a:hover {
+    color: black;
+    background-color: #FAD23A;
+}
+/*baner*/
+.baner .baner_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background: url('../images/baner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.baner .logo {
+    width: 15em;
+    height: 15em;
+}

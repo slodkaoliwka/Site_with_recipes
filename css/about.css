@@ -1,0 +1,48 @@
+/*O mnie*/
+.info__single {
+    /*margin-top: 2em;*/
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.info-text {
+    padding: 0.5em;
+}
+
+.info__title {
+    margin-top: 1em;
+    font-size: 2em;
+    color: black;
+}
+
+.info__description {
+    padding-right: 1em;
+    font-size: 0.8em;
+    color: black;
+}
+
+.info__image {
+    margin-top: 2em;
+    background-color: #FAD23A;
+    /*width: 23em;
+    height: 30em;*/
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 5em;
+}
+
+.portret {
+    width: 23em;
+    height: 30em;
+}
+/*.background {
+    background-color: #FAD23A;
+    width: 23em;
+    height: 30em;
+    position: relative;
+    left: -30px;
+    top: 200px;
+}*/
