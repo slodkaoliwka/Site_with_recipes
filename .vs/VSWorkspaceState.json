@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\images",
     "\\js",
-    "\\supabase-react"
+    "\\supabase-react",
+    "\\supabase-react\\src"
   ],
-  "SelectedNode": "\\css\\_footer.css",
+  "SelectedNode": "\\supabase-react\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }

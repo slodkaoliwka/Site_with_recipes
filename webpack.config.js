@@ -2,7 +2,7 @@ const path = require("path");
 const entryPath = ".";
 
 module.exports = {
-    entry: `./js/app.js`,
+    entry: `./js/calculator.js`,
     output: {
         filename: "out.js",
         path: path.resolve(__dirname, `${entryPath}/build`)
