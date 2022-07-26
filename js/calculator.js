@@ -4,26 +4,26 @@ import ReactDOM from "react-dom";
 const Calculator = () => {
     const [numA, setNumA] = useState();
     const [numB, setNumB] = useState();
-    let result = (numA/(numB*numB));
+    //let result = (numA/(numB*numB));
   
  return(   
      <form class="container">
          <h1>Kalkulator BMI</h1>
          <p>Kalkulator BMI, czyli Body Mass Index. To narzêdzie daj¹ce mo¿liwoœæ szybkiego i wygodego obliczenia w³asnego wskaŸnika masy cia³a. BMI obliczamy dziel¹c masê cia³a (w kilogramach) przez wzrost do kwadratu (w metrach).</p>
             <label class="weight">Waga (kg):</label>
-            <input type="number" onChange={e => setNumA(Number(e.target.value))} value="waga" /><br/>
+            <input type="text" onChange={e => setNumA(Number(e.target.value))} value="waga" /><br/>
             <label class="height" >Wzrost (m):</label>
-         <input type="number" onChange={e => setNumB(Number(e.target.value))} value="wzrost" /><br />
-         <h2>(numA / (numB * numB)</h2>
+         <input type="text" onChange={e => setNumB(Number(e.target.value))} value="wzrost" /><br />
+         <h2>{(numA / (numB * numB))}</h2>
         </form>
     );
-    switch (result) {
-        case (result < 18, 49):
+    switch ((numA / (numB * numB))) {
+        case ((numA / (numB * numB)) < 18,49):
             return (
                 <p>niedowaga</p>
             );
             break;
-        case (18, 5 < result < 24, 99):
+        case ((numA / (numB * numB)) < result < (numA / (numB * numB))):
             return (
                 <p>wartoœæ prawid³owa</p>
             );
