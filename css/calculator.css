@@ -1,6 +1,7 @@
 #calculator {
     display: flex;
     justify-content: center;
+    color: black;
 }
 #calculator .container {
     display: flex;
