@@ -63,26 +63,62 @@ const Calculator = () => {
         if (!formValid) {
             return;
         }
-        const bmi = +mass / (+height) ** 2;
+        const bmi = (+mass / (+height) ** 2).toFixed(2);
         setBmi(bmi);
     };
+    const getResults = (bmi) => {
+        let bmiResults = {
+            label: '',
+            alertClass: '',
+        };
+
+        if (bmi <= 18.5) {
+            bmiResults.label = 'Niedowaga';
+            bmiResults.alertClass = 'alert-danger';
+        }
+        else if (bmi <= 24.9) {
+            bmiResults.label = 'Waga prawid³owa';
+            bmiResults.alertClass = 'alert-success';
+        }
+        else if (bmi <= 29.9) {
+            bmiResults.label = 'Nadwaga';
+            bmiResults.alertClass = 'alert-warning';
+        }
+        else if (bmi >= 30) {
+            bmiResults.label = 'Oty³oœæ';
+            bmiResults.alertClass = 'alert-danger';
+        } else {
+            bmiResults.label = 'BMI';
+            bmiResults.alertClass = 'alert-primary';
+        }
+
+        return bmiResults;
+    }
+    let result = getResults;
 
     return (
         <div class="calculator">
-            <form onSubmit={calculate}>
-                <div>
-                    <label>height in meters</label>
-                    <input value={height} onChange={(e) => setHeight(e.target.value)} />
+            <form onSubmit={calculate} class='calculator-form'>
+                <h3>Kalkulator BMI</h3>
+                <div class='height'>
+                    <label>Wzrost w metrach: </label>
+                    <input class='input' value={height} onChange={(e) => setHeight(e.target.value)} />
                 </div>
 
-                <div>
-                    <label>mass in kg</label>
-                    <input value={mass} onChange={(e) => setMass(e.target.value)} />
+                <div class='weight'>
+                    <label>Waga w kilogramach: </label>
+                    <input class='input' value={mass} onChange={(e) => setMass(e.target.value)} />
                 </div>
 
-                <button type="submit">calculate</button>
+                <button type="submit">Oblicz</button>
             </form>
-            <p>bmi: {bmi}</p>
+            <div class='result'>
+            <h3>Twoje BMI wynosi: {bmi}</h3>
+            <div class="result-info">
+                <getResults bmi={bmi} label={result.label} alertClass={result.alertClass} />
+                </div>
+            </div>
+            <img src='../images/bmi-co-to.webp'/>
         </div>
     );
 }

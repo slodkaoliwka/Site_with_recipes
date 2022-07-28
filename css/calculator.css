@@ -11,6 +11,28 @@
     margin: 2em;
     color: black;
 }
-    #calculator h1 {
-        background-color: #FAD23A
-    }
+.calculator{
+    margin: 4em 0;
+}   
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+        margin-top:1em;
+        margin-left: 1em;
+}
+button {
+    margin: 1em 0 2em 0;
+}
+.bmi-image{
+    height: 50px;
+    width: auto;
+    background-image: url('../images/bmi-co-to.webp');
+}
