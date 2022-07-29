@@ -24,6 +24,16 @@
     flex-direction: column;
     align-items: center;
 }
+.height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .input{
         margin-top:1em;
         margin-left: 1em;
@@ -31,8 +41,15 @@
 button {
     margin: 1em 0 2em 0;
 }
-.bmi-image{
-    height: 50px;
-    width: auto;
-    background-image: url('../images/bmi-co-to.webp');
+.bmi-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*max-width: 40em;*/
+    /*height: auto;*/
+    /*background-image: url('../images/bmi-co-to.webp');*/
+}
+.result h3{
+    margin-bottom: 2em;
 }
