@@ -5,9 +5,8 @@ import { Calculator } from './calculator';
 
 const App = () => {
     return 
-        //<ListRecipes />
+        <ListRecipes/>,
         <Calculator/>
-    
 }
 
 ReactDOM.render(<App/>, document.getElementById("calculator"));

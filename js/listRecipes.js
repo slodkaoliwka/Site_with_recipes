@@ -1,7 +1,8 @@
 import { useState, useEfect } from 'react';
+import ReactDOM from "react-dom";
 import { supabase } from './supabase';
 
-function ListRecipes() {
+const ListRecipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [recipe, setRecipe] = useState({ name: '', photo: '' });
     const { name, content } = recipe;
@@ -18,17 +19,15 @@ function ListRecipes() {
     async function createRecipe() {
         await supabase
             .from('posts')
-            .insert([{ name, photo }])
+            .insert([{ name, content }])
             .sinle()
-        setRecipe({ name: '', photo: '' })
+        setRecipes({ name: '', content: '' })
         fetchPosts()
     }
     return (
-        <div>
-            <input pleacerholder="Name"
-                value={name}
-                onChange={e => setPost({ ...recipe, name: e.target.value })} />
-            <button onClick={createRecipe}> Create recipe</button>
+        <div class='recipes-container'>
+            <input pleacerholder="Name" value={name} onChange={e => setPost({ ...recipe, name: e.target.value })} />
+            <button onClick={createRecipe}> Open recipe</button>
             <div className="list">
                 {recipes.map(recipe => (
                     <div key={recipe.id}>
