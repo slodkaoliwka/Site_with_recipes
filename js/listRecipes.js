@@ -2,10 +2,11 @@ import { useState, useEfect } from 'react';
 import ReactDOM from "react-dom";
 import { supabase } from './supabase';
 
-const ListRecipes = () => {
+export const ListRecipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [recipe, setRecipe] = useState({ name: '', photo: '' });
     const { name, content } = recipe;
+
     useEfect(() => {
         fetchRecipes()
     }, []);
@@ -41,3 +42,4 @@ const ListRecipes = () => {
     )
 }
 export default ListRecipes;
+//ReactDOM.render(<ListRecipes/>, document.getElementById("diner"));

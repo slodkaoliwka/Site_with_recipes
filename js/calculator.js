@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 
 
+
 const Calculator = () => {
     const [height, setHeight] = useState(0);
     const [mass, setMass] = useState(0);
@@ -53,7 +54,7 @@ const Calculator = () => {
 
                 <div class='weight'>
                     <label>Waga w kilogramach: </label>
-                    <input class='input' value={mass} onChange={(e) => setMass(e.target.value)} />
+                    <input type='number' class='input' value={mass} onChange={(e) => setMass(e.target.value)} />
                 </div>
 
                 <button type="submit">Oblicz</button>

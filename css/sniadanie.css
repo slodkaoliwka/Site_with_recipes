@@ -1,0 +1,19 @@
+.recipes_list {
+    max-width: 1024px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    
+}
+    .recipes_list h1 {
+        margin-bottom: 3em;
+        background-color: #FFFFAB;
+        text-align:center;
+    }
+.post {
+    max-width: 1024px;
+    color: black;
+    margin-bottom: 2em;
+}

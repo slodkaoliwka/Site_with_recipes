@@ -4,6 +4,9 @@
 @import 'footer.css';
 @import 'calculator.css';
 @import 'kontakt.css';
+@import 'sniadanie.css';
+@import 'kolacja.css';
+@import 'obiad.css';
 
 body {
     font: 20px Montserrat, sans-serif;
@@ -82,10 +85,19 @@ p {
     max-width: 1024px;
     background-color: #FFFFAB;
     margin-top: 5em;
-    margin-bottom:5em;
+    margin-bottom: 5em;
+    background-image: url("../images/IMG-0084.jpg");
+    opacity: 0.9;
+    height: 30em;
+    font-weight: 800;
+}
+.left-side  h3 {
+    font-size: 3em;
+    color: black;
+    font-weight: 800;
 }
 .cooking_text{
-    font-size: 1em;
+    font-size: 2em;
     color:black;
 }
 /*galeria*/
@@ -102,7 +114,7 @@ p {
 }
 
 .bg-3 p {
-        font-size: 0.6em;
+        font-size: 0.9em;
         color: black;
     }
 .carousel-item {

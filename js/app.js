@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ListRecipes from './listRecipes';
 import { Calculator } from './calculator';
+import ListRecipes from './listRecipes';
+
 
 const App = () => {
     return 
-        <ListRecipes/>,
-        <Calculator/>
+    //<ListRecipes />
+        //<Calculator/>
+        
 }
 
 ReactDOM.render(<App/>, document.getElementById("calculator"));
